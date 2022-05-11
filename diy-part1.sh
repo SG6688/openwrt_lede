@@ -25,7 +25,7 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 git clone https://github.com/sirpdboy/luci-app-advanced package/luci-app-advanced
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 sed -i 's/PATCHVER:=5.10/PATCHVER:=5.15/g' target/linux/ramips/Makefile
 
 #git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
