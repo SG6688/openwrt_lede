@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 #sed -i '$a src-git small https://github.com/Thanf-code/small-package' feeds.conf.default
-#sed -i '$a src-git small https://github.com/kenzok8/small-package' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small-package' feeds.conf.default
 
 #sed -i '$a src-git immortalwrt https://github.com/immortalwrt/packages.git;openwrt-21.02' feeds.conf.default
 #git clone https://github.com/sirpdboy/luci-app-advanced package/luci-app-advanced
