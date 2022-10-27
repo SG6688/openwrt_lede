@@ -57,10 +57,8 @@ jobs:
         token: ${{ secrets.ACTIONS_TRIGGER_PAT }}
         event-type: ${{ env.date3 }} 
  
-    - name: Delete workflow runs
-      uses: Mattraks/delete-workflow-runs@v2
+    - name: 删除工作流
+      uses: GitRML/delete-workflow-runs@main
       with:
-       token: ${{ github.token }}
-       repository: ${{ github.repository }}
-       retain_days: 1
-       keep_minimum_runs: 1
+        retain_days: 1
+        keep_minimum_runs: 1
